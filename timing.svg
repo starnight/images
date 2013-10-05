@@ -1,0 +1,118 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" viewBox="0 0 578 207">
+	<defs>
+		<marker id="triangle" viewBox="0 0 10 10" refX="0" refY="5"
+			markerUnits="strokeWidth" markerWidth="12" markerHeight="9" orient="auto">
+			<path d="M 0 0 L 10 5 L 0 10 Z" />
+		</marker>
+		<marker id="striangle" viewBox="0 0 10 10" refX="0" refY="5"
+			markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+			<path d="M 0 0 L 10 5 L 0 10 Z" stroke="context-stroke" />
+		</marker>
+		<marker id="circle" viewBox="0 0 2 2" refX="1" refY="1"
+			markerUnits="strokeWidth" markerWidth="2.5" markerHeight="2.5" orient="auto">
+			<circle cx="1" cy="1" r="1" stroke="context-stroke" />
+		</marker>
+		<marker id="unlimit" viewBox="0 0 10 10" refX="5" refY="5"
+			markerUnits="strokeWidth" markerWidth="10" markerHeight="10" orient="auto">
+			<path d="M0,5 c0,5 10,10" />
+		</marker>
+	</defs>
+	<line x1="6" y1="194" x2="569" y2="194" style="stroke:black;stroke-width:1;"
+		marker-end="url(#triangle)" />
+	<line x1="6" y1="194" x2="6" y2="9" style="stroke:black;stroke-width:1;"
+		marker-end="url(#triangle)" />
+	<text x="250" y="207" style="font-style:italic;font-size:0.8em;">time line</text>
+	<polyline points="6,194 6,169, 26,169 26,194 77,194 77,169 97,169 97,194 137,194 137,169 157,169 157,194 157,169 167,169 167,194 192,194 192,169 202,169, 202,194 267,194 267,169 287,169 287,194 337,194 337,169 357,169 357,194 407,194 407,169 427,169 427,194 467,194 467,169 485,169"
+		style="fill:none;stroke:blue;stroke-width:1;" />
+	<text x="495" y="187" style="fill:blue;">Scheduler</text>
+	<polyline points="6,154 26,154, 26,129 77,129 77,154 357,154 357,129 407,129 407,154 485,154"
+		style="fill:none;stroke:red;stroke-width:1;" />
+	<text x="495" y="147" style="fill:red;">Job #1</text>
+	<polyline points="6,114 97,114, 97,89 137,89 137,114 202,114 202,89 232,89 232,114 257,114 257,89 267,89 267,114 427,114 427,89 467,89 467,114 485,114"
+		style="fill:none;stroke:purple;stroke-width:1;" />
+	<text x="495" y="107" style="fill:purple;">Job #2</text>
+	<polyline points="6,74 287,74 287,49 337,49 337,74 485,74"
+		style="fill:none;stroke:green;stroke-width:1;" />
+	<text x="495" y="67" style="fill:green;">Job #3</text>
+	<polyline points="6,34 167,34, 167,9 192,9 192,34 232,34 232,9 257,9 257,34 485,34"
+		style="fill:none;stroke:dimgray;stroke-width:1;" marker-end="url(#unlimit)" />
+	<text x="495" y="27" style="fill:dimgray;">Interrupts</text>
+	<g style="fill:none;stroke:black;stroke-width:1;"
+		stroke-dasharray="3,2" marker-end="url(#striangle)">
+		<path d="M26,169 l0,-12" />
+		<path d="M77,154 l0,12" />
+		<path d="M97,169 l0,-52" />
+		<path d="M137,114 l0,52" />
+		<path d="M167,169 l0,-132" />
+		<path d="M192,34 l0,132" />
+		<path d="M202,169 l0,-52" />
+		<path d="M232,89 l0,-52" />
+		<path d="M257,34 l0,52" />
+		<path d="M267,114 l0,52" />
+		<path d="M287,169 l0,-93" />
+		<path d="M337,74 l0,93" />
+		<path d="M357,169 l0,-12" />
+		<path d="M407,154 l0,12" />
+		<path d="M427,169 l0,-52" />
+		<path d="M467,114 l0,52" />
+	</g>
+	<g style="fill:none;stroke-width:1;" stroke-dasharray="3,5"
+		marker-start="url(#circle)" marker-end="url(#striangle)">
+		<path d="M61,129 q8,-20 33,-27" style="stroke:purple;" />
+		<path d="M182,9 q40,42 102,52" style="stroke:green;" />
+		<path d="M247,9 c80,5 60,120 108,130" style="stroke:red;" />
+		<path d="M391,129 q8,-20 33,-27" style="stroke:purple;" />
+	</g>
+	<path d="M485,188 c2,1 2,5 0,6 c-2,1 -2,5 0,6" style="fill:none;stroke:black;" />
+	<path d="M486.5,188 c2,1 2,5 0,6 c-2,1 -2,5 0,6" style=" fill:none;stroke:white;" />
+	<path d="M487.5,188 c2,1 2,5 0,6 c-2,1 -2,5 0,6" style="fill:none;stroke:black;" />
+	<g style="fill:black;font-size:0.3em;">
+		<text x="32" y="163" style="text-anchor:middle;dominant-baseline:middle;">1</text>
+		<text x="60" y="135" style="text-anchor:middle;dominant-baseline:middle;fill:purple">2</text>
+		<text x="71" y="160" style="text-anchor:middle;dominant-baseline:middle;">3</text>
+		<text x="103" y="163" style="text-anchor:middle;dominant-baseline:middle;">4</text>
+		<text x="131" y="120" style="text-anchor:middle;dominant-baseline:middle;">5</text>
+		<text x="151" y="180" style="text-anchor:middle;dominant-baseline:middle;">6</text>
+		<text x="173" y="163" style="text-anchor:middle;dominant-baseline:middle;">7</text>
+		<text x="182" y="20" style="text-anchor:middle;dominant-baseline:middle;fill:green;">8</text>
+		<text x="186" y="40" style="text-anchor:middle;dominant-baseline:middle;">9</text>
+		<text x="208" y="163" style="text-anchor:middle;dominant-baseline:middle;">10</text>
+		<text x="238" y="81" style="text-anchor:middle;dominant-baseline:middle;">11</text>
+		<text x="247" y="17" style="text-anchor:middle;dominant-baseline:middle;fill:red;">12</text>
+		<text x="251" y="40" style="text-anchor:middle;dominant-baseline:middle;">13</text>
+		<text x="261" y="120" style="text-anchor:middle;dominant-baseline:middle;">14</text>
+		<text x="293" y="163" style="text-anchor:middle;dominant-baseline:middle;">15</text>
+		<text x="331" y="81" style="text-anchor:middle;dominant-baseline:middle;">16</text>
+		<text x="363" y="163" style="text-anchor:middle;dominant-baseline:middle;">17</text>
+		<text x="390" y="135" style="text-anchor:middle;dominant-baseline:middle;fill:purple">18</text>
+		<text x="401" y="160" style="text-anchor:middle;dominant-baseline:middle;">19</text>
+		<text x="433" y="163" style="text-anchor:middle;dominant-baseline:middle;">20</text>
+		<text x="461" y="120" style="text-anchor:middle;dominant-baseline:middle;">21</text>
+	</g>
+	<g style="fill:none;stroke:black;stroke-width:0.5;">
+		<circle cx="32" cy="163" r="4" style="stroke:black;" />
+		<circle cx="60" cy="135" r="4" style="stroke:purple;" />
+		<circle cx="71" cy="160" r="4" style="stroke:black;" />
+		<circle cx="103" cy="163" r="4" style="stroke:black;" />
+		<circle cx="131" cy="120" r="4" style="stroke:black;" />
+		<circle cx="151" cy="180" r="4" style="stroke:black;" />
+		<circle cx="173" cy="163" r="4" style="stroke:black;" />
+		<circle cx="182" cy="20" r="4" style="stroke:green;" />
+		<circle cx="186" cy="40" r="4" style="stroke:black;" />
+		<circle cx="208" cy="163" r="4" style="stroke:black;" />
+		<circle cx="238" cy="81" r="4" style="stroke:black;" />
+		<circle cx="247" cy="17" r="4" style="stroke:red;" />
+		<circle cx="251" cy="40" r="4" style="stroke:black;" />
+		<circle cx="261" cy="120" r="4" style="stroke:black;" />
+		<circle cx="293" cy="163" r="4" style="stroke:black;" />
+		<circle cx="331" cy="81" r="4" style="stroke:black;" />
+		<circle cx="363" cy="163" r="4" style="stroke:black;" />
+		<circle cx="390" cy="135" r="4" style="stroke:purple;" />
+		<circle cx="401" cy="160" r="4" style="stroke:black;" />
+		<circle cx="433" cy="163" r="4" style="stroke:black;" />
+		<circle cx="461" cy="120" r="4" style="stroke:black;" />
+	</g>
+</svg>

@@ -61,7 +61,7 @@
 	</g>
 	<g style="fill:none;stroke-width:1;" stroke-dasharray="3,5"
 		marker-start="url(#circle)" marker-end="url(#striangle)">
-		<path d="M61,129 q8,-20 33,-27" style="stroke:purple;" />
+		<path d="M61,129 q20,-27 118,-27" style="stroke:purple;" />
 		<path d="M162,9 q50,42 102,52" style="stroke:green;" />
 		<path d="M227,9 c60,5 60,120 107,130" style="stroke:red;" />
 		<path d="M371,129 q8,-20 33,-27" style="stroke:purple;" />
